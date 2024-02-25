@@ -18,7 +18,10 @@ app.get("/", (req, res) => {
                 <input type="hidden" name="username" id="username">
                 <br />
                 <button type="submit">Send</button>
-            </form>`
+            </form>
+            <script>
+                document.getElementById('username').value = localStorage.getItem('username');
+            </script>`
         );
     });
 });
